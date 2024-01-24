@@ -8,13 +8,15 @@ import { InicioComponent } from './pages/inicio/inicio.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ClientesComponent } from './pages/clientes/clientes.component';
 import { FormsModule } from '@angular/forms';
+import { FacturasComponent } from './pages/facturas/facturas.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     InicioComponent,
-    ClientesComponent
+    ClientesComponent,
+    FacturasComponent
   ],
   imports: [
     BrowserModule,

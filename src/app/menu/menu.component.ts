@@ -8,7 +8,8 @@ import { Component } from '@angular/core';
 export class MenuComponent {
   paginas = [
     {titulo: "Inicio" , path: "paginas/inicio"},
-    {titulo: "Clientes", path: "paginas/clientes"}
+    {titulo: "Clientes", path: "paginas/clientes"},
+    {titulo: "Ingreso Factura", path: "paginas/facturas"}
   ]
 
 }
