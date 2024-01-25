@@ -11,8 +11,26 @@
         <td>{{fact.numero}}</td>
         <td>{{fact.total}}</td>
         <td>{{fact.cliente.nombre}}</td>
+        <td>
+            <table *ngIf="fact.detalle && fact.detalle.length > 0">
+                <tr>
+                    <th>Código</th>
+                    <th>Nombre</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                </tr>
+                <tr *ngFor="let det of fact.detalle">
+                    <td>{{det.codigo}}</td>
+                    <td>{{det.nombre}}</td>
+                    <td>{{det.cantidad}}</td>
+                    <td>{{det.precio}}</td>
+                </tr>
+            </table>
+            <span *ngIf="!fact.detalle || fact.detalle.length === 0">Sin detalles</span>
+        </td>
     </tr>
 </table>
+
 
 <h1>DETALLES</h1>
 <table>
