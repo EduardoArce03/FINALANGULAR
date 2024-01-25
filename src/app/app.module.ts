@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ClientesComponent } from './pages/clientes/clientes.component';
 import { FormsModule } from '@angular/forms';
 import { FacturasComponent } from './pages/facturas/facturas.component';
+import { IngresoFacComponent } from './pages/ingreso-fac/ingreso-fac.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FacturasComponent } from './pages/facturas/facturas.component';
     MenuComponent,
     InicioComponent,
     ClientesComponent,
-    FacturasComponent
+    FacturasComponent,
+    IngresoFacComponent
   ],
   imports: [
     BrowserModule,

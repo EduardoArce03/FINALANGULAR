@@ -20,7 +20,7 @@ export class ClientesComponent implements OnInit{
 
   guardar(){
     this.clienteService.saveClientes(this.client).subscribe(data =>{
-      console.log(data)
+      console.log()
       if(data.codigo == 1){
         this.ngOnInit()
         alert("Ingresado exitosamente")

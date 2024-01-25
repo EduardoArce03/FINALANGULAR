@@ -1,0 +1,49 @@
+<h1>INGRESO DE FACTURAS</h1>
+
+<form action="">
+    <table>
+        <tr>
+            <td>Codigo</td>
+            <td><input type="text" name="txtCodigo" [(ngModel)]="fact.codigo"></td>
+        </tr>
+        <tr>
+            <td>Numero</td>
+            <td><input type="text" name="txtNumero" [(ngModel)]="fact.numero"></td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td><input type="text" name="txtTotal" [(ngModel)]="fact.total"></td>
+        </tr>
+        <tr>
+            <td>Ingrese DNI de Cliente</td>
+            <td><input type="text" name="txtDNI" [(ngModel)]="dni"></td>
+        </tr>
+        
+    </table>
+    <hr>
+<h1>DETALLES</h1>
+<hr>
+<form>
+    <table>
+        <tr>
+            <td>Codigo</td>
+            <td><input type="text" name="txtCodigo" [(ngModel)]="codi"></td>
+        </tr>
+        <tr>
+            <td>Nombre</td>
+            <td><input type="text" name="txtNombre" [(ngModel)]="nombre"></td>
+        </tr>
+        <tr>
+            <td>Cantidad</td>
+            <td><input type="text" name="txtCantidad" [(ngModel)]="cantidad"></td>
+        </tr>
+        <tr>
+            <td>Precio</td>
+            <td><input type="text" name="txtPrecio" [(ngModel)]="precio"></td>
+        </tr>
+        
+    </table>
+    <button (click)="obtenerCliente()">Guardar</button>
+    
+</form>
+

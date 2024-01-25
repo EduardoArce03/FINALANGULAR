@@ -10,12 +10,12 @@ export class ClientesServices {
     constructor(private http: HttpClient){}
 
     getClientes(){
-        let url = enviroment.WS_PATH + "/clientes/list"
+        let url = enviroment.WS_PATH + "clientes/list"
         return this.http.get<any>(url)
     }
 
     saveClientes(cliente: Cliente){
-        let url = enviroment.WS_PATH + "/clientes"
+        let url = enviroment.WS_PATH + "clientes"
         return this.http.post<any>(url, cliente)
     }
 }
